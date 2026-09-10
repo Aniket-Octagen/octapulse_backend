@@ -1,0 +1,195 @@
+{
+  "_meta": {
+    "version": "2026-04-01",
+    "source": "Demo EPC Tracker (demo_schedule_apr2026.csv)",
+    "project": "Demo Petrochemical Plant EPC",
+    "note": "Demo environment — placeholder data for showcase purposes"
+  },
+  "status_cards": {
+    "days_gained_lost": {
+      "label": "Days Gained / Lost Overall",
+      "mc_slip_display": "+104d slip to MC",
+      "mc_baseline": "01 Dec 2026",
+      "mc_forecast": "15 Mar 2027",
+      "all_milestones_moved": true,
+      "note": "Dec 2026 → Mar 2027 · critical path driven by procurement delays",
+      "detail": "Net overrun vs original baseline: +104d. Recovery plan targeting 55d compression via civil re-sequencing and vendor acceleration."
+    },
+    "recovered": {
+      "label": "What Has Been Recovered",
+      "total_recovered_days": 42,
+      "civil_saved_days": 28,
+      "compressor_saved_days": 14,
+      "c1000_float_improvement": "+8d",
+      "note": "Piping prefab front-loading saved 28d. Vendor fast-track saved 14d.",
+      "chips": [
+        { "label": "Civil", "value": "28d", "color_class": "green" },
+        { "label": "Procurement", "value": "14d", "color_class": "cyan" },
+        { "label": "D-C-022 float", "value": "+8d", "color_class": "green" }
+      ]
+    },
+    "at_risk": {
+      "label": "What Is Still at Risk",
+      "mc_slip_display": "+104d MC",
+      "residual_risk_days": 12,
+      "residual_risk_display": "+12d",
+      "risk_items": [
+        {
+          "id": "D-E-031",
+          "name": "Main Substation Cable Pulling",
+          "float_days": 1,
+          "months_persistent": 2,
+          "note": "1-day float for 2nd consecutive month. Electrical crew redeployment required."
+        },
+        {
+          "id": "D-P-045",
+          "name": "Heat Exchanger Bundle",
+          "float_days": 3,
+          "months_persistent": 1,
+          "note": "3d float. Vendor expediting ongoing — confirm delivery by end May."
+        },
+        {
+          "id": "D-C-060",
+          "name": "Piping Installation Train A",
+          "float_days": 0,
+          "months_persistent": 2,
+          "note": "On critical path. Prefab acceleration partially mitigating column internals delay."
+        }
+      ]
+    }
+  },
+  "waterfall": [
+    {
+      "name": "Baseline",
+      "sub": "Dec 2026 MC programme",
+      "base": 0,
+      "bar": 0,
+      "delta": null,
+      "color": "#64748b",
+      "is_negative": false,
+      "activities": []
+    },
+    {
+      "name": "Started later",
+      "sub": "Civil chain 45–92d late starts",
+      "base": 0,
+      "bar": 49,
+      "delta": "+49d",
+      "color": "#dc2626",
+      "is_negative": false,
+      "activities": [
+        { "id": "D-C-015", "name": "Column Foundation — Concrete Works", "detail": "Late start: 92 days", "value_days": 92, "value_label": "92d late start" },
+        { "id": "D-C-022", "name": "Structural Steel Erection", "detail": "Late start: 68 days", "value_days": 68, "value_label": "68d late start" },
+        { "id": "D-C-060", "name": "Piping Installation Train A", "detail": "Late start: 45 days", "value_days": 45, "value_label": "45d late start" }
+      ]
+    },
+    {
+      "name": "Took longer",
+      "sub": "Concrete works and piping overruns",
+      "base": 49,
+      "bar": 97,
+      "delta": "+97d",
+      "color": "#f59e0b",
+      "is_negative": false,
+      "activities": [
+        { "id": "D-C-015", "name": "Column Foundation — Concrete Works", "detail": "45d planned → 62d actual (+17d overrun)", "value_days": 17, "value_label": "45d → 62d" },
+        { "id": "D-C-060", "name": "Piping Installation Train A", "detail": "90d planned → 105d actual (+15d overrun)", "value_days": 15, "value_label": "90d → 105d" },
+        { "id": "D-E-031", "name": "Substation Cable Pulling", "detail": "50d planned → 55d actual (+5d overrun)", "value_days": 5, "value_label": "50d → 55d" }
+      ]
+    },
+    {
+      "name": "Procurement delay",
+      "sub": "Column internals +86d slip",
+      "base": 97,
+      "bar": 146,
+      "delta": "+49d",
+      "color": "#7c3aed",
+      "is_negative": false,
+      "activities": [
+        { "id": "D-P-001", "name": "Column Internals Delivery", "detail": "Vendor manufacturing delayed +86 days vs baseline", "value_days": 86, "value_label": "+86d vendor delay" }
+      ]
+    },
+    {
+      "name": "Civil compression",
+      "sub": "Re-sequencing & crew acceleration",
+      "base": 146,
+      "bar": 118,
+      "delta": "-28d",
+      "color": "#16a34a",
+      "is_negative": true,
+      "activities": [
+        { "id": "D-C-015", "name": "Foundation — 2nd pour re-plan", "detail": "Parallel crew deployment: saved 18d", "value_days": 18, "value_label": "18d saved" },
+        { "id": "D-C-022", "name": "Steel erection front-loaded", "detail": "Prefab overlap with civil: saved 10d", "value_days": 10, "value_label": "10d saved" }
+      ]
+    },
+    {
+      "name": "Procurement fast-track",
+      "sub": "Vendor acceleration, early delivery",
+      "base": 118,
+      "bar": 104,
+      "delta": "-14d",
+      "color": "#0891b2",
+      "is_negative": true,
+      "activities": [
+        { "id": "D-P-001", "name": "Column internals early shipment", "detail": "Air freight for part-delivery: saved 14d", "value_days": 14, "value_label": "14d saved" }
+      ]
+    },
+    {
+      "name": "Current forecast",
+      "sub": "Mar 2027 MC (+104d vs baseline)",
+      "base": 104,
+      "bar": 104,
+      "delta": "+104d",
+      "color": "#1d4ed8",
+      "is_negative": false,
+      "activities": []
+    }
+  ],
+  "civil_overruns": [
+    { "id": "D-C-015", "name": "Column Foundation — Concrete Works",    "planned_days": 45, "actual_days": 62,  "overrun_days": 17, "detail": "Late start 92d + 17d duration overrun. Main civil driver." },
+    { "id": "D-C-022", "name": "Structural Steel Erection — Main Frame",  "planned_days": 60, "actual_days": 75,  "overrun_days": 15, "detail": "Dependent on foundation completion. Steel delivery on track." },
+    { "id": "D-C-060", "name": "Piping Installation — Train A",           "planned_days": 90, "actual_days": 105, "overrun_days": 15, "detail": "On CP. Prefab front-loading partially mitigating delays." }
+  ],
+  "stage_recovery": [
+    {
+      "stage": "Engineering",
+      "planned_pct": 88.0,
+      "actual_pct": 83.5,
+      "gap_pct": 4.5,
+      "status": "Behind",
+      "note": "IFC package delayed; vendor drawing approvals outstanding"
+    },
+    {
+      "stage": "Procurement",
+      "planned_pct": 74.0,
+      "actual_pct": 63.4,
+      "gap_pct": 10.6,
+      "status": "Behind",
+      "note": "Column internals and heat exchanger both delayed"
+    },
+    {
+      "stage": "Civil / Construction",
+      "planned_pct": 47.0,
+      "actual_pct": 34.7,
+      "gap_pct": 12.3,
+      "status": "Behind",
+      "note": "Foundation overrun driving all downstream civil works"
+    },
+    {
+      "stage": "Project Management",
+      "planned_pct": 88.0,
+      "actual_pct": 83.1,
+      "gap_pct": 4.9,
+      "status": "On Track",
+      "note": "PMT controls adequate. Weekly recovery reviews in place."
+    },
+    {
+      "stage": "Commissioning",
+      "planned_pct": 9.0,
+      "actual_pct": 6.2,
+      "gap_pct": 2.8,
+      "status": "Not Started",
+      "note": "Pre-commissioning planning underway. MC prerequisite not yet met."
+    }
+  ]
+}

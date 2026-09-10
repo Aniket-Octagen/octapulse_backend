@@ -1,0 +1,329 @@
+{
+  "last_updated": "2026-06-16T16:48:08.050957",
+  "source_month": "April",
+  "source_year": 2026,
+  "last_tracker_month": "April",
+  "last_tracker_year": 2026,
+  "project": {
+    "label": "Borouge EU3 - H2 Extraction EPC",
+    "title": "Schedule Recovery and Calibration",
+    "subtitle": "Schedule Diagnostics and Critical Path Correction",
+    "mc_target": "20 Jan 2027",
+    "status": "Zero Variance - On Track"
+  },
+  "kpis": [
+    {
+      "id": "target_completion",
+      "label": "Target Completion",
+      "value": "20 Jan 2027",
+      "sub": "Mechanical Completion, Zero variance vs baseline",
+      "tone": "neutral"
+    },
+    {
+      "id": "max_delay_absorbed",
+      "label": "Max Delay Absorbed",
+      "value": "+103",
+      "sub": "Days upstream civil overrun fully neutralized",
+      "tone": "amber"
+    },
+    {
+      "id": "days_recovered",
+      "label": "Days Recovered",
+      "value": "98",
+      "sub": "85 civil + 13 compressor compression embedded",
+      "tone": "teal"
+    },
+    {
+      "id": "residual_risk",
+      "label": "Residual Risk",
+      "value": "+7",
+      "sub": "Days slip at C1000, mitigable via +1 shift/week",
+      "tone": "red"
+    },
+    {
+      "id": "false_positives",
+      "label": "False Positives (CP)",
+      "value": "67",
+      "sub": "Activities flagged early causing monitoring noise",
+      "tone": "amber"
+    },
+    {
+      "id": "blind_spots",
+      "label": "Blind Spots (CP)",
+      "value": "20",
+      "sub": "Zero-float activities missing from Longest Path",
+      "tone": "red"
+    },
+    {
+      "id": "optimized_cp_chain",
+      "label": "Optimized CP Chain",
+      "value": "35",
+      "sub": "Activities (down from 102), focused and actionable",
+      "tone": "teal"
+    }
+  ],
+  "recovery_architecture": {
+    "waterfall": [
+      {
+        "label": "Baseline Zero",
+        "days": 0,
+        "tone": "slate"
+      },
+      {
+        "label": "Max Civil Delay",
+        "days": 103,
+        "tone": "amber"
+      },
+      {
+        "label": "Civil Compression",
+        "days": -85,
+        "tone": "teal"
+      },
+      {
+        "label": "Compressor Chain",
+        "days": -13,
+        "tone": "teal_light"
+      },
+      {
+        "label": "Net Position",
+        "days": 0,
+        "tone": "neutral"
+      }
+    ],
+    "progress": {
+      "civil_saved": 85,
+      "civil_total": 103,
+      "compressor_saved": 13,
+      "compressor_total": 13
+    },
+    "civil_overruns": [
+      {
+        "id": "A15750",
+        "name": "Waterproofing",
+        "baseline_days": 19,
+        "current_days": 136,
+        "finish_variance_days": 103
+      },
+      {
+        "id": "A15850",
+        "name": "Concrete Pouring",
+        "baseline_days": 40,
+        "current_days": 80,
+        "finish_variance_days": 81
+      },
+      {
+        "id": "A15840",
+        "name": "Rebar Works",
+        "baseline_days": 40,
+        "current_days": 75,
+        "finish_variance_days": 79
+      },
+      {
+        "id": "A15790",
+        "name": "Formworks",
+        "baseline_days": 40,
+        "current_days": 71,
+        "finish_variance_days": 79
+      },
+      {
+        "id": "A15860",
+        "name": "Concrete Curing",
+        "baseline_days": 47,
+        "current_days": 67,
+        "finish_variance_days": 71
+      }
+    ],
+    "civil_overrun_summary": "5 activities, 243 total days overrun, 103-day finish variance"
+  },
+  "stage_recovery": {
+    "stage1": {
+      "title": "Stage 1 - Downstream Civil Compression",
+      "summary": "Three downstream civil activities re-planned, embedding 85 days of recovery into the sequence. Net delay entering compressor installation reduced to 7 days.",
+      "activities": [
+        {
+          "id": "A15870",
+          "name": "Formwork Removal",
+          "baseline_days": 40,
+          "planned_days": 16,
+          "saved_days": 24
+        },
+        {
+          "id": "A15880",
+          "name": "Protective Coating",
+          "baseline_days": 47,
+          "planned_days": 16,
+          "saved_days": 31
+        },
+        {
+          "id": "A15890",
+          "name": "Backfill and Compaction",
+          "baseline_days": 46,
+          "planned_days": 16,
+          "saved_days": 30
+        }
+      ],
+      "delay_before_days": 103,
+      "delay_after_days": 7,
+      "reduction_percent": 96
+    },
+    "stage2": {
+      "title": "Stage 2 - Compressor Chain Compression",
+      "summary": "10 sequential activities tightened 1-2 days each, generating a 13-day buffer that fully absorbs the 7-day net delay.",
+      "chain": [
+        {
+          "id": "C1000",
+          "saved_days": -1
+        },
+        {
+          "id": "C1001",
+          "saved_days": -1
+        },
+        {
+          "id": "C1002",
+          "saved_days": -2
+        },
+        {
+          "id": "C1007",
+          "saved_days": -2
+        },
+        {
+          "id": "C1008",
+          "saved_days": -1
+        },
+        {
+          "id": "C1009",
+          "saved_days": -2
+        },
+        {
+          "id": "C1010",
+          "saved_days": -1
+        },
+        {
+          "id": "C1011",
+          "saved_days": -1
+        },
+        {
+          "id": "C1013",
+          "saved_days": -1
+        },
+        {
+          "id": "C1014",
+          "saved_days": -1
+        }
+      ],
+      "total_saved_days": 13,
+      "outcome": "All downstream activities restored to baseline finish dates"
+    }
+  },
+  "critical_path_calibration": {
+    "summary": "The Longest Path is compromised with early-completed noise while missing true zero-float drivers. Recalibration from 102 to 35 activities restores precision.",
+    "false_positive": 67,
+    "false_negative": 20,
+    "true_critical": 35,
+    "current_state_count": 102,
+    "optimized_state_count": 35,
+    "risk_register": [
+      {
+        "item": "C1000",
+        "description": "Foundation Check - 7-day unrecovered slip from 24 Mar 2026",
+        "impact": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "item": "FG/OG Fndn",
+        "description": "Compressor and Shelter Foundation - zero float, off Longest Path",
+        "impact": "HIGH",
+        "status": "MITIGATED"
+      },
+      {
+        "item": "Mech. Const.",
+        "description": "Mechanical Construction chain - zero float, absent from CP radar",
+        "impact": "HIGH",
+        "status": "MITIGATED"
+      },
+      {
+        "item": "Pre-Comm.",
+        "description": "Pre-Commissioning chains - zero float, omitted from monitoring",
+        "impact": "MED",
+        "status": "MITIGATED"
+      },
+      {
+        "item": "67 FP Items",
+        "description": "Activities on CP finishing 1-206 days early consuming management bandwidth",
+        "impact": "MED",
+        "status": "PURGED"
+      },
+      {
+        "item": "Vendor Risk",
+        "description": "Vendor attendance delays could consume downstream compression buffer",
+        "impact": "MED",
+        "status": "MONITOR"
+      }
+    ]
+  },
+  "active_mitigation": {
+    "title": "C1000 Residual Risk - Mitigation Lever",
+    "switch": "ON",
+    "lever": "+1 Extra Shift / Week",
+    "recovered_days": 7,
+    "window_days": 39,
+    "detail": "Apply one additional working shift per week during C1000 Foundation Check and C1002 Baseplate Setting. Spread across the 39-day planned duration, this recovers 5-7 days before downstream buffer is consumed."
+  },
+  "forward_operating_mandate": [
+    {
+      "id": "01",
+      "title": "Lock the 35-Activity Path",
+      "description": "Adopt the corrected Critical Path immediately and discontinue the 102-activity model. All reviews must focus on the optimized chain until Mechanical Completion."
+    },
+    {
+      "id": "02",
+      "title": "Protect the Compressions",
+      "description": "Execute the 85-day civil compression and 13-day compressor chain compressions exactly as re-planned. Any slip directly threatens the 20 Jan 2027 date."
+    },
+    {
+      "id": "03",
+      "title": "Activate C1000 Shift Extension",
+      "description": "Mandate the +1 shift/week protocol for foundation check and baseplate setting activities to eliminate the final 7-day vulnerability."
+    }
+  ],
+  "trend_summary": {
+    "headline": "Mechanical Completion has slipped 62 days from 20 Jan 2027 to 23 Mar 2027",
+    "body": "All three terminal milestones have moved 62 calendar days from the April 2026 schedule baseline. MC: 20 Jan to 23 Mar 2027. RFSU: 21 Apr to 22 Jun 2027. PAC: 20 Jul to 20 Sep 2027. The slip is driven by the A15750 civil foundation chain (103-day finish variance), partially offset by 98 days of embedded compression (85d civil + 13d compressor)."
+  },
+  "trend_metrics": [
+    {
+      "value": "+62d",
+      "label": "MC slip vs baseline (Jan 20 to Mar 23, 2027)",
+      "change_note": "All milestones impacted",
+      "severity": "red"
+    },
+    {
+      "value": "+15d",
+      "label": "C1000 float - improved from +4d (Mar) despite absolute date slip",
+      "change_note": "Compressor chain healthier",
+      "severity": "green"
+    },
+    {
+      "value": "+112",
+      "label": "New completions Mar to Apr (vs +405 Feb to Mar) - rate slowed 72%",
+      "change_note": "Productivity concern",
+      "severity": "amber"
+    },
+    {
+      "value": "2",
+      "label": "Vendor drawings still at 1-day float - persisting since March",
+      "change_note": "A31580, A34220 stuck",
+      "severity": "red"
+    }
+  ],
+  "monthly_kpis": {
+    "totalActivities": 5799,
+    "onTime": 48,
+    "onLate": 0,
+    "onEarly": 5751,
+    "notStarted": 0,
+    "milestoneAchieved": 604,
+    "avgPlannedDuration": 19.09,
+    "maxPlannedDuration": 190
+  }
+}

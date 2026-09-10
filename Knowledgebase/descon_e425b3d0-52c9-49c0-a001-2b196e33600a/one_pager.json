@@ -1,0 +1,273 @@
+{
+  "_meta": {
+    "version": "2026-04-17",
+    "source": "SCHEDULE -EPC BOROUGE.xlsx + What-IF Critical Analysis",
+    "project": "Borouge EU3 H2 Extraction EPC",
+    "note": "Update all numeric values and dates after each schedule upload. Waterfall activities auto-derive bar totals."
+  },
+  "status_cards": {
+    "days_gained_lost": {
+      "label": "Days Gained / Lost Overall",
+      "mc_slip_display": "+62d slip to MC",
+      "mc_baseline": "20 Jan 2027",
+      "mc_forecast": "23 Mar 2027",
+      "all_milestones_moved": true,
+      "note": "Jan 20 → Mar 23, 2027 · all milestones moved",
+      "detail": "Net overrun vs original baseline: +62d. 98d recovery plan embedded (civil + compressor)."
+    },
+    "recovered": {
+      "label": "What Has Been Recovered",
+      "total_recovered_days": 98,
+      "civil_saved_days": 85,
+      "compressor_saved_days": 13,
+      "c1000_float_improvement": "+15d",
+      "note": "C1000 improved from -7d float (Feb) to +15d (Apr). Downstream compression embedded.",
+      "chips": [
+        { "label": "Civil", "value": "85d", "color_class": "green" },
+        { "label": "Compressor", "value": "13d", "color_class": "cyan" },
+        { "label": "C1000 float", "value": "+15d", "color_class": "green" }
+      ]
+    },
+    "at_risk": {
+      "label": "What Is Still at Risk",
+      "mc_slip_display": "+62d MC",
+      "residual_risk_days": 7,
+      "residual_risk_display": "+7d",
+      "risk_items": [
+        {
+          "id": "A31580",
+          "name": "Vendor Drawings (A31580, A34220)",
+          "float_days": 1,
+          "months_persistent": 2,
+          "note": "Two consecutive months at 1-day float. Formal vendor notice required."
+        },
+        {
+          "id": "GFS",
+          "name": "GF Sub-Station",
+          "float_days": 3,
+          "months_persistent": 2,
+          "note": "3-day float for 2nd consecutive month. Crew redeployment not yet evidenced."
+        },
+        {
+          "id": "INST",
+          "name": "Instrument / Telecom chain",
+          "float_days": 1,
+          "months_persistent": 1,
+          "note": "1-day float to Mar 2027 MC. Cable manufacturer visit required."
+        }
+      ]
+    }
+  },
+  "waterfall": [
+    {
+      "name": "Baseline",
+      "sub": "Apr 2026 programme",
+      "base": 0,
+      "bar": 2,
+      "delta": null,
+      "color": "#64748b",
+      "is_negative": false,
+      "activities": []
+    },
+    {
+      "name": "Started later",
+      "sub": "Civil chain 48–92d late starts",
+      "base": 2,
+      "bar": 57,
+      "delta": "+57d",
+      "color": "#dc2626",
+      "is_negative": false,
+      "activities": [
+        {
+          "id": "A15660",
+          "name": "Excavation",
+          "detail": "Late start: 92 days",
+          "value_days": 92,
+          "value_label": "92d late start"
+        },
+        {
+          "id": "A15670",
+          "name": "Blinding Works",
+          "detail": "Late start: 85 days",
+          "value_days": 85,
+          "value_label": "85d late start"
+        },
+        {
+          "id": "A15680",
+          "name": "Piling Works",
+          "detail": "Late start: 78 days",
+          "value_days": 78,
+          "value_label": "78d late start"
+        },
+        {
+          "id": "A15690",
+          "name": "Raft Foundation Concrete",
+          "detail": "Late start: 67 days",
+          "value_days": 67,
+          "value_label": "67d late start"
+        },
+        {
+          "id": "A15700",
+          "name": "Foundation Tie Beams",
+          "detail": "Late start: 60 days",
+          "value_days": 60,
+          "value_label": "60d late start"
+        },
+        {
+          "id": "A15750",
+          "name": "Waterproofing & Bitumen Coating",
+          "detail": "Late start: 48 days",
+          "value_days": 48,
+          "value_label": "48d late start"
+        }
+      ]
+    },
+    {
+      "name": "Took longer",
+      "sub": "A15750 waterproofing overrun",
+      "base": 59,
+      "bar": 103,
+      "delta": "+103d",
+      "color": "#f59e0b",
+      "is_negative": false,
+      "activities": [
+        {
+          "id": "A15750",
+          "name": "Waterproofing & Bitumen Coating",
+          "detail": "19d planned → 136d actual (+117d overrun)",
+          "value_days": 117,
+          "value_label": "19d → 136d"
+        },
+        {
+          "id": "A15850",
+          "name": "Concrete Pouring",
+          "detail": "40d planned → 80d actual (+40d overrun)",
+          "value_days": 40,
+          "value_label": "40d → 80d"
+        },
+        {
+          "id": "A15840",
+          "name": "Rebar Works",
+          "detail": "40d planned → 75d actual (+35d overrun)",
+          "value_days": 35,
+          "value_label": "40d → 75d"
+        },
+        {
+          "id": "A15790",
+          "name": "Formworks",
+          "detail": "40d planned → 71d actual (+31d overrun)",
+          "value_days": 31,
+          "value_label": "40d → 71d"
+        },
+        {
+          "id": "A15860",
+          "name": "Concrete Curing",
+          "detail": "47d planned → 67d actual (+20d overrun)",
+          "value_days": 20,
+          "value_label": "47d → 67d"
+        }
+      ]
+    },
+    {
+      "name": "Started sooner",
+      "sub": "Compressor chain acceleration",
+      "base": 149,
+      "bar": 13,
+      "delta": "−13d",
+      "color": "#16a34a",
+      "is_negative": true,
+      "activities": [
+        {
+          "id": "C1000",
+          "name": "FG Foundation Check & Dimensional Examination",
+          "detail": "Duration compressed: 16d → 7d (saved 9d)",
+          "value_days": 9,
+          "value_label": "−9d"
+        },
+        {
+          "id": "C1001",
+          "name": "Installation of FG Compressor (Setting, Leveling)",
+          "detail": "Early mobilization of vendor team saved 4d",
+          "value_days": 4,
+          "value_label": "−4d"
+        }
+      ]
+    },
+    {
+      "name": "Happened quicker",
+      "sub": "Civil compression plan",
+      "base": 64,
+      "bar": 85,
+      "delta": "−85d",
+      "color": "#0ea5e9",
+      "is_negative": true,
+      "activities": [
+        {
+          "id": "A15870",
+          "name": "Formwork Removal",
+          "detail": "Compressed: 40d → 16d (saved 24d)",
+          "value_days": 24,
+          "value_label": "40d → 16d"
+        },
+        {
+          "id": "A15880",
+          "name": "Protective Coating",
+          "detail": "Compressed: 47d → 16d (saved 31d)",
+          "value_days": 31,
+          "value_label": "47d → 16d"
+        },
+        {
+          "id": "A15890",
+          "name": "Backfill & Compaction",
+          "detail": "Compressed: 46d → 16d (saved 30d)",
+          "value_days": 30,
+          "value_label": "46d → 16d"
+        }
+      ]
+    },
+    {
+      "name": "Net position",
+      "sub": "MC: 23 Mar 2027 (+62d)",
+      "base": 0,
+      "bar": 62,
+      "delta": "+62d",
+      "color": "#7c3aed",
+      "is_negative": false,
+      "activities": [
+        {
+          "id": "A1-PM-PKM-0002",
+          "name": "Mechanical Completion (MC)",
+          "detail": "20 Jan 2027 → 23 Mar 2027 (+62d)",
+          "value_days": 62,
+          "value_label": "+62d"
+        },
+        {
+          "id": "A1-PM-PKM-0003",
+          "name": "Ready for Start-up (RFSU)",
+          "detail": "21 Apr 2027 → 22 Jun 2027 (+62d)",
+          "value_days": 62,
+          "value_label": "+62d"
+        },
+        {
+          "id": "A1-PM-PKM-0004",
+          "name": "Provisional Acceptance Certificate (PAC)",
+          "detail": "20 Jul 2027 → 20 Sep 2027 (+62d)",
+          "value_days": 62,
+          "value_label": "+62d"
+        }
+      ]
+    }
+  ],
+  "summary_text": "A15750 Waterproofing ran 117 days over its planned 19-day duration (19d → 136d), cascading a +103d finish variance through the civil foundation chain. Despite 57 days of late starts across CP activities, the recovery plan absorbed 98 days (85d civil compression + 13d compressor acceleration), leaving a net +62d risk to Mechanical Completion (Jan 20 → Mar 23, 2027). With +1 shift/week on the C1000 foundation chain the residual reduces to approximately +7 days.",
+  "recovery_summary": {
+    "total_recovered": 98,
+    "civil_compression": 85,
+    "compressor_acceleration": 13,
+    "still_at_risk": 62,
+    "mc_baseline": "20 Jan 2027",
+    "mc_forecast": "23 Mar 2027",
+    "pac_baseline": "20 Jul 2027",
+    "pac_forecast": "20 Sep 2027",
+    "residual_with_extra_shift": 7
+  }
+}

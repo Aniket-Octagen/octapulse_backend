@@ -1,0 +1,100 @@
+{
+  "_meta": {
+    "version": "2026-04-01",
+    "source": "Demo EPC Tracker (demo_schedule_apr2026.csv)",
+    "project": "Demo Petrochemical Plant EPC",
+    "note": "Demo environment — placeholder data for showcase purposes"
+  },
+  "activities": [
+    {
+      "id": "D-P-001",
+      "name": "Column Internals — Delivery",
+      "category": "P",
+      "baseline_finish": "2026-04-15",
+      "forecast_finish": "2026-07-10",
+      "baseline_duration": null,
+      "current_duration": null,
+      "variance_days": 86,
+      "float_days": 0,
+      "responsible": "Vendor / Procurement",
+      "description": "Main column internals package delivery to site. Critical procurement item driving downstream construction sequence.",
+      "risk_level": "critical",
+      "notes": "Vendor manufacturing delayed. Fast-track options being explored."
+    },
+    {
+      "id": "D-C-015",
+      "name": "Column Foundation — Concrete Works",
+      "category": "C",
+      "baseline_finish": "2026-03-20",
+      "forecast_finish": "2026-06-05",
+      "baseline_duration": 45,
+      "current_duration": 62,
+      "variance_days": 77,
+      "float_days": 0,
+      "responsible": "Civil Subcontractor",
+      "description": "Reinforced concrete foundation for main processing column. Late start and extended duration both contributing to overrun.",
+      "risk_level": "critical",
+      "notes": "Crew redeployment partially executed. 2nd concrete pour rescheduled."
+    },
+    {
+      "id": "D-C-022",
+      "name": "Structural Steel Erection — Main Frame",
+      "category": "C",
+      "baseline_finish": "2026-05-10",
+      "forecast_finish": "2026-08-25",
+      "baseline_duration": 60,
+      "current_duration": 75,
+      "variance_days": 107,
+      "float_days": 2,
+      "responsible": "Construction Subcontractor",
+      "description": "Main structural steel frame erection. Dependent on D-C-015 completion.",
+      "risk_level": "high",
+      "notes": "2d float remaining. Any further slip will push to critical path."
+    },
+    {
+      "id": "D-E-031",
+      "name": "Main Substation — Cable Pulling",
+      "category": "E",
+      "baseline_finish": "2026-06-30",
+      "forecast_finish": "2026-09-12",
+      "baseline_duration": 50,
+      "current_duration": 55,
+      "variance_days": 74,
+      "float_days": 1,
+      "responsible": "Electrical Subcontractor",
+      "description": "HV/LV cable pulling for main substation. 1-day float — formally on critical path risk watch.",
+      "risk_level": "critical",
+      "notes": "Cable manufacturer delivery confirmed. Crew mobilisation on track."
+    },
+    {
+      "id": "D-P-045",
+      "name": "Heat Exchanger Bundle — Delivery",
+      "category": "P",
+      "baseline_finish": "2026-05-20",
+      "forecast_finish": "2026-07-28",
+      "baseline_duration": null,
+      "current_duration": null,
+      "variance_days": 69,
+      "float_days": 3,
+      "responsible": "Vendor / Procurement",
+      "description": "Shell-and-tube heat exchanger bundle. 3d float remaining.",
+      "risk_level": "medium",
+      "notes": "Vendor expediting in progress."
+    },
+    {
+      "id": "D-C-060",
+      "name": "Piping Installation — Train A",
+      "category": "C",
+      "baseline_finish": "2026-07-15",
+      "forecast_finish": "2026-10-20",
+      "baseline_duration": 90,
+      "current_duration": 105,
+      "variance_days": 97,
+      "float_days": 0,
+      "responsible": "Piping Subcontractor",
+      "description": "Process piping installation for Train A. Driven by late delivery of column internals and heat exchanger.",
+      "risk_level": "critical",
+      "notes": "Prefabrication being front-loaded to absorb site delivery delays."
+    }
+  ]
+}

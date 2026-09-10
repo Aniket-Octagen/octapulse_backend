@@ -1,0 +1,45 @@
+---
+description: Production database is connected — never drop, delete, or run harmful commands
+alwaysApply: true
+---
+
+# Database Safety (Production)
+
+This workspace is connected to the **production database**.
+
+NEVER drop, delete, truncate, reset, or otherwise destroy data. Do not run harmful commands.
+
+## Forbidden (do not run, even if asked vaguely)
+
+- `DROP DATABASE` / `DROP TABLE` / `DROP SCHEMA`
+- `TRUNCATE`
+- `DELETE` (any form, unless the user confirms the exact command)
+- Database reset / recreate / wipe commands
+- Migrations that destroy or overwrite existing data
+- `ALTER TABLE` that drops columns or destroys data
+
+Never treat "fix", "reset", "clean", "recreate", or "update" as approval for destructive work.
+
+If it is unclear whether an operation is destructive, treat it as destructive and stop.
+
+## Schema changes are allowed — be careful
+
+Additive, non-destructive schema work is OK (new tables, columns, indexes, constraints) but:
+
+1. Stop and explain the change before executing.
+2. Show the exact SQL/command.
+3. Prefer additive migrations over drop/recreate.
+4. Avoid commands that lock large tables or rewrite data unless the user confirms.
+5. Use transactions where possible.
+
+```sql
+-- ❌ BAD — never run on production
+DROP DATABASE theta;
+DROP TABLE orders;
+DELETE FROM users;
+ALTER TABLE users DROP COLUMN email;
+
+-- ✅ GOOD — additive schema, shown first
+ALTER TABLE users ADD COLUMN last_login_at TIMESTAMPTZ;
+CREATE INDEX CONCURRENTLY idx_users_email ON users (email);
+```

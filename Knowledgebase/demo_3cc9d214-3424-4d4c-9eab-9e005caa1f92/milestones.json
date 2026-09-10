@@ -1,0 +1,108 @@
+{
+  "_meta": {
+    "version": "2026-04-01",
+    "source": "Demo EPC Tracker (demo_schedule_apr2026.csv)",
+    "project": "Demo Petrochemical Plant EPC",
+    "note": "Demo environment — placeholder data for showcase purposes"
+  },
+  "milestones": [
+    {
+      "id": "LOA",
+      "label": "Letter of Award (LOA)",
+      "activity_id": "D-PM-001",
+      "category": "Contract",
+      "forecast_finish": "2024-10-15",
+      "early_finish": "2024-10-15",
+      "done": true,
+      "key": true,
+      "variance_days": 0,
+      "description": "Contract award — official project start. Marks commencement of EPC contract.",
+      "responsible": "Owner / Client",
+      "notes": ""
+    },
+    {
+      "id": "KOM",
+      "label": "Kick-Off Meeting Completed",
+      "activity_id": "D-PM-002",
+      "category": "Project Management",
+      "forecast_finish": "2024-11-10",
+      "early_finish": "2024-11-10",
+      "done": true,
+      "key": false,
+      "variance_days": 0,
+      "description": "Formal kick-off with all stakeholders. Baseline schedule and interfaces agreed.",
+      "responsible": "PMT",
+      "notes": ""
+    },
+    {
+      "id": "IFC-ENG",
+      "label": "Issued for Construction — Engineering Drawings",
+      "activity_id": "D-E-010",
+      "category": "Engineering",
+      "forecast_finish": "2025-06-01",
+      "early_finish": "2025-04-15",
+      "done": true,
+      "key": true,
+      "variance_days": 47,
+      "description": "All discipline IFC drawings released to construction. Delayed by vendor data approvals.",
+      "responsible": "Engineering Lead",
+      "notes": "Variance 47 days"
+    },
+    {
+      "id": "FOUND-COMP",
+      "label": "Foundations — Mechanical Completion",
+      "activity_id": "D-C-015",
+      "category": "Civil",
+      "forecast_finish": "2026-07-31",
+      "early_finish": "2026-04-20",
+      "done": false,
+      "key": true,
+      "variance_days": 102,
+      "description": "All civil foundations handed over to structural team. Currently on critical path.",
+      "responsible": "Civil Subcontractor",
+      "notes": "Forecast slip +102 days vs baseline"
+    },
+    {
+      "id": "COL-DEL",
+      "label": "Column Internals Delivery to Site",
+      "activity_id": "D-P-001",
+      "category": "Procurement",
+      "forecast_finish": "2026-07-10",
+      "early_finish": "2026-04-15",
+      "done": false,
+      "key": true,
+      "variance_days": 86,
+      "description": "Critical long-lead item. Drives all downstream column erection and piping.",
+      "responsible": "Procurement Manager",
+      "notes": "Vendor confirmed July delivery"
+    },
+    {
+      "id": "MECH-COMP",
+      "label": "Mechanical Completion (MC)",
+      "activity_id": "D-MC-001",
+      "category": "Completion",
+      "forecast_finish": "2027-03-15",
+      "early_finish": "2026-12-01",
+      "done": false,
+      "key": true,
+      "variance_days": 104,
+      "description": "All mechanical systems installed and commissioned. Project MC gate.",
+      "responsible": "Project Director",
+      "notes": "Target recovery to reduce to +45d slip by Q3 2026"
+    },
+    {
+      "id": "RFSU",
+      "label": "Ready for Start-Up (RFSU)",
+      "activity_id": "D-MC-002",
+      "category": "Completion",
+      "forecast_finish": "2027-05-20",
+      "early_finish": "2027-02-01",
+      "done": false,
+      "key": true,
+      "variance_days": 108,
+      "description": "All systems ready for plant start-up. Requires MC completion plus commissioning.",
+      "responsible": "Project Director",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,771 @@
+{
+  "Benchmark": [
+    {
+      "Unnamed: 0": "Category",
+      "Unnamed: 1": "Benchmark Metric",
+      "Unnamed: 2": "Typical Range / Reference",
+      "Unnamed: 3": "Use in Future Projects"
+    },
+    {
+      "Unnamed: 0": "Total Construction Productivity",
+      "Unnamed: 1": "Total construction manhours",
+      "Unnamed: 2": "~80,000–85,000 MH (from summary sheet)",
+      "Unnamed: 3": "Baseline labour requirement for similar process unit"
+    },
+    {
+      "Unnamed: 0": "Discipline Cost Distribution",
+      "Unnamed: 1": "Civil",
+      "Unnamed: 2": "20–30% of construction cost",
+      "Unnamed: 3": "Detect scope imbalance"
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": "Mechanical (equipment + piping)",
+      "Unnamed: 2": "35–45%",
+      "Unnamed: 3": "Key driver in process plants"
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": "Electrical",
+      "Unnamed: 2": "10–15%",
+      "Unnamed: 3": "Power & cable intensive plants may be higher"
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": "Instrumentation",
+      "Unnamed: 2": "8–12%",
+      "Unnamed: 3": "Control system complexity indicator"
+    },
+    {
+      "Unnamed: 0": "Steel Structure",
+      "Unnamed: 1": "Labour productivity",
+      "Unnamed: 2": "35–60 MH / ton",
+      "Unnamed: 3": "Benchmark for steel erection"
+    },
+    {
+      "Unnamed: 0": "Civil Works",
+      "Unnamed: 1": "Concrete installation",
+      "Unnamed: 2": "4–8 MH / m³",
+      "Unnamed: 3": "Civil productivity benchmark"
+    },
+    {
+      "Unnamed: 0": "Piling Works",
+      "Unnamed: 1": "Piling productivity",
+      "Unnamed: 2": "6–12 MH / pile (typical industrial)",
+      "Unnamed: 3": "Foundation cost comparison"
+    },
+    {
+      "Unnamed: 0": "Piping Installation",
+      "Unnamed: 1": "Labour productivity",
+      "Unnamed: 2": "0.8–1.5 MH / inch-dia (GF)",
+      "Unnamed: 3": "Piping productivity baseline"
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": "Brownfield piping",
+      "Unnamed: 2": "1.5–3 MH / inch-dia",
+      "Unnamed: 3": "Congestion impact benchmark"
+    },
+    {
+      "Unnamed: 0": "Mechanical Equipment",
+      "Unnamed: 1": "Installation labour",
+      "Unnamed: 2": "150–600 MH per major equipment",
+      "Unnamed: 3": "Equipment erection comparison"
+    },
+    {
+      "Unnamed: 0": "Heat Exchangers",
+      "Unnamed: 1": "Installation + alignment",
+      "Unnamed: 2": "200–400 MH typical",
+      "Unnamed: 3": "Mechanical benchmark"
+    },
+    {
+      "Unnamed: 0": "Vessels / Drums",
+      "Unnamed: 1": "Installation",
+      "Unnamed: 2": "150–350 MH",
+      "Unnamed: 3": "Equipment install reference"
+    },
+    {
+      "Unnamed: 0": "Electrical",
+      "Unnamed: 1": "Cable laying productivity",
+      "Unnamed: 2": "0.15–0.40 MH / meter",
+      "Unnamed: 3": "Electrical labour benchmarking"
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": "Cable termination",
+      "Unnamed: 2": "1–3 MH per cable",
+      "Unnamed: 3": "Commissioning planning"
+    },
+    {
+      "Unnamed: 0": "Instrumentation",
+      "Unnamed: 1": "Instrument loop installation",
+      "Unnamed: 2": "12–25 MH per loop",
+      "Unnamed: 3": "Controls installation benchmark"
+    },
+    {
+      "Unnamed: 0": "Greenfield vs Brownfield",
+      "Unnamed: 1": "Productivity difference",
+      "Unnamed: 2": "BF typically 20–50% lower productivity",
+      "Unnamed: 3": "Risk adjustment factor"
+    },
+    {
+      "Unnamed: 0": "Procurement Lead Time",
+      "Unnamed: 1": "Vessels / Drums",
+      "Unnamed: 2": "16–24 weeks",
+      "Unnamed: 3": "Schedule benchmarking"
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": "Heat exchangers",
+      "Unnamed: 2": "18–28 weeks",
+      "Unnamed: 3": "Long-lead planning"
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": "Transformers",
+      "Unnamed: 2": "20–30 weeks",
+      "Unnamed: 3": "Electrical critical path"
+    },
+    {
+      "Unnamed: 0": "Construction Duration",
+      "Unnamed: 1": "Mechanical erection window",
+      "Unnamed: 2": "~4–6 months",
+      "Unnamed: 3": "Scheduling benchmark"
+    },
+    {
+      "Unnamed: 0": "Commissioning Preparation",
+      "Unnamed: 1": "E&I completion before commissioning",
+      "Unnamed: 2": "3–6 months before start-up",
+      "Unnamed: 3": "Commissioning readiness indicator"
+    }
+  ],
+  "Summary": [
+    {
+      "What is going well": "Area / Package",
+      "Unnamed: 1": "Benchmark Duration",
+      "Unnamed: 2": "Observed Project Duration",
+      "Unnamed: 3": "Efficiency Driver"
+    },
+    {
+      "What is going well": "Equipment manufacturing and inspection",
+      "Unnamed: 1": "18–28 weeks typical",
+      "Unnamed: 2": "~16–22 weeks for several items",
+      "Unnamed: 3": "Early vendor engagement"
+    },
+    {
+      "What is going well": "Mechanical equipment installation",
+      "Unnamed: 1": "5–6 months typical",
+      "Unnamed: 2": "~4–5 months",
+      "Unnamed: 3": "Parallel installation activities"
+    },
+    {
+      "What is going well": "Steel structure erection",
+      "Unnamed: 1": "4–5 months typical",
+      "Unnamed: 2": "~3–4 months",
+      "Unnamed: 3": "Efficient erection sequencing"
+    },
+    {
+      "What is going well": "Major vessel / cooler installation",
+      "Unnamed: 1": "2–3 months typical",
+      "Unnamed: 2": "~1.5–2 months",
+      "Unnamed: 3": "Good crane planning and site readiness"
+    },
+    {
+      "What is going well": "Underground piping installation",
+      "Unnamed: 1": "4–5 months typical",
+      "Unnamed: 2": "~3–4 months",
+      "Unnamed: 3": "Early civil completion enabling piping works"
+    },
+    {
+      "What is going well": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null
+    },
+    {
+      "What is going well": "What is not going so well.",
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null
+    },
+    {
+      "What is going well": "Area / Package",
+      "Unnamed: 1": "Benchmark Duration",
+      "Unnamed: 2": "Observed Project Duration",
+      "Unnamed: 3": "Likely Reason"
+    },
+    {
+      "What is going well": "Engineering (IFC / Documentation release)",
+      "Unnamed: 1": "4–6 months",
+      "Unnamed: 2": "~6–8 months",
+      "Unnamed: 3": "Extended document approval cycles and multiple revision stages"
+    },
+    {
+      "What is going well": "Equipment procurement & deliveries",
+      "Unnamed: 1": "16–24 weeks typical",
+      "Unnamed: 2": "~20–30+ weeks for several items",
+      "Unnamed: 3": "Long-lead equipment and vendor coordination"
+    },
+    {
+      "What is going well": "Civil finishing / infrastructure (roads, pavement, architectural works)",
+      "Unnamed: 1": "3–4 months typical",
+      "Unnamed: 2": "~5–6 months",
+      "Unnamed: 3": "Works scheduled late in project and dependent on other packages"
+    },
+    {
+      "What is going well": "Electrical heat tracing & loop testing",
+      "Unnamed: 1": "3–4 months typical",
+      "Unnamed: 2": "~6 months",
+      "Unnamed: 3": "Sequential execution with cabling and instrumentation"
+    },
+    {
+      "What is going well": "Cabling & E&I integration",
+      "Unnamed: 1": "3–5 months typical",
+      "Unnamed: 2": "~6+ months",
+      "Unnamed: 3": "Integration with existing plant (brownfield interfaces)"
+    },
+    {
+      "What is going well": "Commissioning preparation window",
+      "Unnamed: 1": "3–4 months typical",
+      "Unnamed: 2": "~5 months",
+      "Unnamed: 3": "Large system integration scope"
+    }
+  ],
+  "Sheet3": [
+    {
+      "Unnamed: 0": "Strategic Intelligence from the Benchmark Comparison"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "This project shows a common EPC pattern:"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Construction productivity > Engineering / Integration productivity"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Meaning:"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Site execution teams are efficient"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Bottlenecks occur in engineering approvals and system integration"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "For future projects this suggests:"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Increase front-end engineering maturity before procurement"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Accelerate E&I engineering freeze"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Introduce earlier commissioning planning"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Monitor vendor documentation cycles"
+    }
+  ],
+  "Scorecard": [
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null
+    },
+    {
+      "Unnamed: 0": "Area",
+      "Unnamed: 1": "Score / 100",
+      "Unnamed: 2": "Assessment",
+      "Unnamed: 3": "Basis"
+    },
+    {
+      "Unnamed: 0": "Project Management",
+      "Unnamed: 1": 85,
+      "Unnamed: 2": "Strong",
+      "Unnamed: 3": "Slightly ahead of plan; governance and reporting appear stable"
+    },
+    {
+      "Unnamed: 0": "Engineering / EDDR",
+      "Unnamed: 1": 65,
+      "Unnamed: 2": "Moderate",
+      "Unnamed: 3": "Progress is materially behind benchmark pace and document cycle looks extended"
+    },
+    {
+      "Unnamed: 0": "Procurement – HO Services",
+      "Unnamed: 1": 70,
+      "Unnamed: 2": "Moderate",
+      "Unnamed: 3": "Mostly advanced, but still below ideal close-out rate for this stage"
+    },
+    {
+      "Unnamed: 0": "Manufacturing & Delivery",
+      "Unnamed: 1": 82,
+      "Unnamed: 2": "Strong",
+      "Unnamed: 3": "Ahead of revised baseline; deliveries and vendor progress appear better than benchmark"
+    },
+    {
+      "Unnamed: 0": "Bulk Materials",
+      "Unnamed: 1": 55,
+      "Unnamed: 2": "Weak",
+      "Unnamed: 3": "Significantly behind expected readiness for this project phase"
+    },
+    {
+      "Unnamed: 0": "Main Automation Equipment",
+      "Unnamed: 1": 72,
+      "Unnamed: 2": "Moderate",
+      "Unnamed: 3": "Some slippage, but still generally recoverable"
+    },
+    {
+      "Unnamed: 0": "Main Electrical Equipment",
+      "Unnamed: 1": 76,
+      "Unnamed: 2": "Moderate",
+      "Unnamed: 3": "Slightly below benchmark, but not critical yet"
+    },
+    {
+      "Unnamed: 0": "Civil Construction",
+      "Unnamed: 1": 50,
+      "Unnamed: 2": "Weak",
+      "Unnamed: 3": "Largest underperformance versus benchmark among core site disciplines"
+    },
+    {
+      "Unnamed: 0": "Mechanical Construction",
+      "Unnamed: 1": 60,
+      "Unnamed: 2": "Weak to Moderate",
+      "Unnamed: 3": "Behind benchmark; installation pace not yet matching expected construction window"
+    },
+    {
+      "Unnamed: 0": "Electrical Construction",
+      "Unnamed: 1": 78,
+      "Unnamed: 2": "Stable",
+      "Unnamed: 3": "Roughly on plan, but dependent on upstream material and cabling readiness"
+    },
+    {
+      "Unnamed: 0": "Construction & Pre-commissioning Overall",
+      "Unnamed: 1": 52,
+      "Unnamed: 2": "Weak",
+      "Unnamed: 3": "Main project drag; construction productivity below expected benchmark"
+    },
+    {
+      "Unnamed: 0": "Commissioning Readiness",
+      "Unnamed: 1": 68,
+      "Unnamed: 2": "Moderate Risk",
+      "Unnamed: 3": "Still achievable, but only if construction and E&I close-out recover on time"
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null
+    },
+    {
+      "Unnamed: 0": "Overall Project Benchmark Index: 68 / 100",
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null
+    },
+    {
+      "Unnamed: 0": "Summary:",
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null
+    },
+    {
+      "Unnamed: 0": "The project is showing good performance in management and manufacturing/delivery, but site execution and engineering maturity are lagging, especially in civil, bulk materials, and overall construction/pre-commissioning.",
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null
+    }
+  ],
+  "Heatmap": [
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": "Rank",
+      "Unnamed: 1": "Delay Driver",
+      "Unnamed: 2": "Heat Level",
+      "Unnamed: 3": "Why it matters",
+      "Unnamed: 4": "Current Benchmark View"
+    },
+    {
+      "Unnamed: 0": 1,
+      "Unnamed: 1": "Construction & Pre-commissioning",
+      "Unnamed: 2": "High",
+      "Unnamed: 3": "Largest variance against plan; directly affects mechanical completion and handover",
+      "Unnamed: 4": "Materially slower than benchmark"
+    },
+    {
+      "Unnamed: 0": 2,
+      "Unnamed: 1": "Civil Construction",
+      "Unnamed: 2": "High",
+      "Unnamed: 3": "Civil readiness constrains mechanical, E&I, roads, and close-out works",
+      "Unnamed: 4": "Well behind benchmark"
+    },
+    {
+      "Unnamed: 0": 3,
+      "Unnamed: 1": "Bulk Materials",
+      "Unnamed: 2": "High",
+      "Unnamed: 3": "Delays in material availability ripple into piping, E&I, and construction productivity",
+      "Unnamed: 4": "Significantly behind benchmark"
+    },
+    {
+      "Unnamed: 0": 4,
+      "Unnamed: 1": "Engineering / EDDR",
+      "Unnamed: 2": "Medium-High",
+      "Unnamed: 3": "Late engineering maturity reduces procurement efficiency and creates downstream rework risk",
+      "Unnamed: 4": "Slower than benchmark"
+    },
+    {
+      "Unnamed: 0": 5,
+      "Unnamed: 1": "Mechanical Construction",
+      "Unnamed: 2": "Medium-High",
+      "Unnamed: 3": "Installation pace appears below expected window for this project stage",
+      "Unnamed: 4": "Behind benchmark"
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": "Area",
+      "Unnamed: 1": "Heat Level",
+      "Unnamed: 2": "Comment",
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": "Procurement – HO Services",
+      "Unnamed: 1": "Medium",
+      "Unnamed: 2": "Near completion but not yet fully closed out",
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": "Main Automation Equipment",
+      "Unnamed: 1": "Medium",
+      "Unnamed: 2": "Manageable slippage, but could affect integration",
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": "Main Electrical Equipment",
+      "Unnamed: 1": "Medium",
+      "Unnamed: 2": "Slightly behind; monitor against commissioning path",
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": "E&I Integration / Cabling / Heat Tracing",
+      "Unnamed: 1": "Medium-High",
+      "Unnamed: 2": "Based on schedule structure, this remains a likely late-project pressure point",
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": "Heat map takeaway",
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    },
+    {
+      "Unnamed: 0": "The project’s primary risk is not heavy equipment delivery anymore. The bigger issue is now conversion of engineering and materials into completed construction and pre-commissioning progress.",
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null,
+      "Unnamed: 4": null
+    }
+  ],
+  "Sheet6": [
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null,
+      "Unnamed: 3": null
+    },
+    {
+      "Unnamed: 0": "Benchmark Area",
+      "Unnamed: 1": "Typical Good Range",
+      "Unnamed: 2": "Borouge Indication",
+      "Unnamed: 3": "Reuse in Other Projects"
+    },
+    {
+      "Unnamed: 0": "Engineering maturity by mid-project",
+      "Unnamed: 1": "85–95%",
+      "Unnamed: 2": "Below ideal",
+      "Unnamed: 3": "Compare EDDR/document close-out rate"
+    },
+    {
+      "Unnamed: 0": "Procurement close-out",
+      "Unnamed: 1": "90–100%",
+      "Unnamed: 2": "Slightly below ideal",
+      "Unnamed: 3": "Check if procurement is still constraining site"
+    },
+    {
+      "Unnamed: 0": "Manufacturing / delivery progress",
+      "Unnamed: 1": "30–40%+ at current stage depending on weighting",
+      "Unnamed: 2": "Better than benchmark",
+      "Unnamed: 3": "Useful sign of vendor-side strength"
+    },
+    {
+      "Unnamed: 0": "Bulk material readiness",
+      "Unnamed: 1": "Should support construction without major constraint",
+      "Unnamed: 2": "Below benchmark",
+      "Unnamed: 3": "Early warning metric for site slowdown"
+    },
+    {
+      "Unnamed: 0": "Civil construction productivity",
+      "Unnamed: 1": "Should be materially advanced before peak mech/E&I",
+      "Unnamed: 2": "Underperforming",
+      "Unnamed: 3": "Good predictor of downstream congestion"
+    },
+    {
+      "Unnamed: 0": "Mechanical construction productivity",
+      "Unnamed: 1": "4–6 month efficient execution windows",
+      "Unnamed: 2": "Slower than benchmark",
+      "Unnamed: 3": "Compare equipment installation performance"
+    },
+    {
+      "Unnamed: 0": "Electrical construction readiness",
+      "Unnamed: 1": "Should track close to construction plan",
+      "Unnamed: 2": "Stable but dependent",
+      "Unnamed: 3": "Good indicator for commissioning readiness"
+    },
+    {
+      "Unnamed: 0": "Construction & pre-commissioning overall",
+      "Unnamed: 1": "Should track near revised baseline",
+      "Unnamed: 2": "Weak",
+      "Unnamed: 3": "Best single indicator of schedule health"
+    },
+    {
+      "Unnamed: 0": "Commissioning readiness",
+      "Unnamed: 1": "E&I and mechanical completion should support start-up window",
+      "Unnamed: 2": "Moderate risk",
+      "Unnamed: 3": "Can be used as final project readiness score"
+    }
+  ],
+  "Legend": [
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": "Variance vs Benchmark / Plan",
+      "Unnamed: 1": "Rating",
+      "Unnamed: 2": "Score"
+    },
+    {
+      "Unnamed: 0": "Ahead by more than 2 percentage points",
+      "Unnamed: 1": "Green",
+      "Unnamed: 2": "85–100"
+    },
+    {
+      "Unnamed: 0": "Within +/- 2 points",
+      "Unnamed: 1": "Amber-Green",
+      "Unnamed: 2": "70–84"
+    },
+    {
+      "Unnamed: 0": "Behind by 2–5 points",
+      "Unnamed: 1": "Amber",
+      "Unnamed: 2": "55–69"
+    },
+    {
+      "Unnamed: 0": "Behind by 5–10 points",
+      "Unnamed: 1": "Red-Amber",
+      "Unnamed: 2": "40–54"
+    },
+    {
+      "Unnamed: 0": "Behind by more than 10 points",
+      "Unnamed: 1": "Red",
+      "Unnamed: 2": "Below 40"
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": null,
+      "Unnamed: 1": null,
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": "KPI",
+      "Unnamed: 1": "Why it matters",
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": "Engineering maturity %",
+      "Unnamed: 1": "Predicts procurement and rework risk",
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": "Procurement close-out %",
+      "Unnamed: 1": "Shows whether material readiness will constrain site",
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": "Bulk material readiness %",
+      "Unnamed: 1": "Strong leading indicator for field productivity",
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": "Civil progress %",
+      "Unnamed: 1": "Determines whether downstream trades can flow",
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": "Mechanical construction %",
+      "Unnamed: 1": "Measures erection productivity",
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": "Electrical / Instrument progress %",
+      "Unnamed: 1": "Key for pre-commissioning and start-up",
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": "Construction & Pre-commissioning %",
+      "Unnamed: 1": "Best overall execution health metric",
+      "Unnamed: 2": null
+    },
+    {
+      "Unnamed: 0": "Variance to revised baseline",
+      "Unnamed: 1": "Most practical management control indicator",
+      "Unnamed: 2": null
+    }
+  ],
+  "Management review": [
+    {
+      "Unnamed: 0": "Bottom-line management view"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Where the project is stronger than benchmark"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Project management"
+    },
+    {
+      "Unnamed: 0": "Manufacturing and delivery"
+    },
+    {
+      "Unnamed: 0": "General procurement control"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Where the project is weaker than benchmark"
+    },
+    {
+      "Unnamed: 0": "Civil construction"
+    },
+    {
+      "Unnamed: 0": "Bulk materials readiness"
+    },
+    {
+      "Unnamed: 0": "Engineering / EDDR maturity"
+    },
+    {
+      "Unnamed: 0": "Mechanical construction"
+    },
+    {
+      "Unnamed: 0": "Overall construction and pre-commissioning conversion"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "Main conclusion"
+    },
+    {
+      "Unnamed: 0": null
+    },
+    {
+      "Unnamed: 0": "This project looks like a case where upstream management and supply-side performance are reasonably strong, but field conversion into installed progress is underperforming. In other words, the project is not primarily suffering from lack of planning or vendor activity — it is suffering from execution conversion at site and readiness interfaces."
+    }
+  ]
+}
